@@ -405,7 +405,7 @@ return {
             ["bl_ox"] = {
                 ["name"] = "황소",
                 ["text"] = {
-                    [1] = "#1# 플레이하면",
+                    [1] = "#1##2# 플레이하면",
                     [2] = "돈이 $0가 됩니다"
                 }
             },
@@ -3829,7 +3829,12 @@ return {
             ["b_seed"] = "시드",
             ["k_cap_consumables"] = "소모품",
             ["k_booster"] = "부스터",
-            ["k_eroded_ex"] = "무너짐!"
+            ["k_eroded_ex"] = "무너짐!",
+            ["ph_select_challenge"] = "도전을 선택하세요",
+            ["k_not_allowed_ex"] = "허용되지 않음!",
+            ["k_voucher_restock_1"] = "보스 블라인드에",
+            ["k_voucher_restock_2"] = "승리하면 새로",
+            ["k_voucher_restock_3"] = "채워집니다"
         },
         ["achievement_names"] = {
             ["speedrunner"] = "스피드러너",

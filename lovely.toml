@@ -1,0 +1,331 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+priority = 0
+
+[[patches]]
+[patches.copy]
+target = "functions/misc_functions.lua"
+position = "append"
+sources = [
+    "utils.lua"
+]
+
+[[patches]]
+[patches.pattern]
+target = "game.lua"
+pattern = '''init_localization()'''
+position = "before"
+payload = '''
+apply_properkorean()'''
+match_indent = true
+overwrite = false
+
+# Steamodded 설치 시 기본적으로 업적이 비활성화되기 때문에
+# 언어를 변경할 수 없는 부분 수정
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = '''*_infotip_object.config.set ~= e.config.ref_table.label) and (not G.F_NO_ACHIEVEMENTS*'''
+position = "at"
+payload = '''if _infotip_object.config.set ~= e.config.ref_table.label then'''
+match_indent = true
+overwrite = true
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = '''local state = G.TAROT_INTERRUPT or G.STATE'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"'''
+match_indent = true
+overwrite = false
+
+# '보기 덱'을 '덱 보기'로 수정
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = '''{n=G.UIT.T, config={text = localize('k_view'), scale = 0.48, colour = G.C.WHITE, shadow = true}}'''
+position = "at"
+payload = '''{n=G.UIT.T, config={text = localize(is_korean and "k_deck" or "k_view"), scale = 0.48, colour = G.C.WHITE, shadow = true}}'''
+match_indent = true
+overwrite = true
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = '''{n=G.UIT.T, config={text = localize('k_deck'), scale = 0.38, colour = G.C.WHITE, shadow = true}}'''
+position = "at"
+payload = '''{n=G.UIT.T, config={text = localize(is_korean and "k_view" or "k_deck"), scale = 0.38, colour = G.C.WHITE, shadow = true}}'''
+match_indent = true
+overwrite = true
+
+# 번역되지 않은 바우처 재입고 문구 번역
+[[patches]]
+[patches.pattern]
+target = "functions/button_callbacks.lua"
+pattern = '''elseif G.SETTINGS.language ~= 'en-us' then'''
+position = "before"
+payload = '''
+elseif G.LANG.key == "ko" then
+    e.states.visible = true
+'''
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = '''{n=G.UIT.T, config={text = 'DEFEAT', scale = 0.6, colour = G.C.WHITE}}'''
+position = "at"
+payload = '''{n=G.UIT.T, config={text = is_korean and localize("k_voucher_restock_1") or 'DEFEAT', scale = 0.6, colour = G.C.WHITE}}'''
+match_indent = true
+overwrite = true
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = '''{n=G.UIT.T, config={text = 'BOSS BLIND', scale = 0.4, colour = G.C.WHITE}}'''
+position = "at"
+payload = '''{n=G.UIT.T, config={text = is_korean and localize("k_voucher_restock_2") or 'BOSS BLIND', scale = 0.6, colour = G.C.WHITE}}'''
+match_indent = true
+overwrite = true
+
+[[patches]]
+[patches.pattern]
+target = "cardarea.lua"
+pattern = '''{n=G.UIT.T, config={text = 'TO RESTOCK', scale = 0.4, colour = G.C.WHITE}}'''
+position = "at"
+payload = '''{n=G.UIT.T, config={text = is_korean and localize("k_voucher_restock_3") or 'TO RESTOCK', scale = 0.6, colour = G.C.WHITE}}'''
+match_indent = true
+overwrite = true
+
+# 번역되지 않은 'Not Allowed!' 문구 번역
+[[patches]]
+[patches.pattern]
+target = "functions/state_events.lua"
+pattern = '''play_area_status_text*Not Allowed*'''
+position = "at"
+payload = '''play_area_status_text(G.LANG.key == "ko" and localize("k_not_allowed_ex") or "Not Allowed!")'''
+match_indent = true
+overwrite = true
+
+# 부스터 팩 관련 문구 개선
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''function create_UIBox_arcana_pack()'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"
+local choose = (is_korean and "장 " or "")..localize("k_choose")..(is_korean and "" or " ")
+local pack = {ref_table = G.GAME, ref_value = "pack_choices"}'''
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''function create_UIBox_spectral_pack()'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"
+local choose = (is_korean and "장 " or "")..localize("k_choose")..(is_korean and "" or " ")
+local pack = {ref_table = G.GAME, ref_value = "pack_choices"}'''
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''function create_UIBox_standard_pack()'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"
+local choose = (is_korean and "장 " or "")..localize("k_choose")..(is_korean and "" or " ")
+local pack = {ref_table = G.GAME, ref_value = "pack_choices"}'''
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''function create_UIBox_buffoon_pack()'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"
+local choose = (is_korean and "장 " or "")..localize("k_choose")..(is_korean and "" or " ")
+local pack = {ref_table = G.GAME, ref_value = "pack_choices"}'''
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''function create_UIBox_celestial_pack()'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"
+local choose = (is_korean and "장 " or "")..localize("k_choose")..(is_korean and "" or " ")
+local pack = {ref_table = G.GAME, ref_value = "pack_choices"}'''
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''{n=G.UIT.O, config={object = DynaText({string = {localize('k_choose')..' '}, colours = {G.C.WHITE},shadow = true, rotate = true, bump = true, spacing =2, scale = 0.5, pop_in = 0.7})}},'''
+position = "at"
+payload = '''{n=G.UIT.O, config={object = DynaText({string = {is_korean and pack or choose}, colours = {G.C.WHITE},shadow = true, rotate = true, bump = true, spacing =2, scale = 0.5, pop_in = 0.7})}},'''
+match_indent = true
+overwrite = true
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''{n=G.UIT.O, config={object = DynaText({string = {{ref_table = G.GAME, ref_value = 'pack_choices'}}, colours = {G.C.WHITE},shadow = true, rotate = true, bump = true, spacing =2, scale = 0.5, pop_in = 0.7})}}'''
+position = "at"
+payload = '''{n=G.UIT.O, config={object = DynaText({string = {is_korean and choose or pack}, colours = {G.C.WHITE},shadow = true, rotate = true, bump = true, spacing =2, scale = 0.5, pop_in = 0.7})}}'''
+match_indent = true
+overwrite = true
+
+# 올바른 조사 사용이 필요한 부분들 처리
+# 블라인드 컬렉션에서 황소에 호버했을 때 나타나는 툴팁의 조사 처리
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''local loc_name = localize{type = 'name_text', key = blind.key, set = 'Blind'}'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"
+local ox_vars = is_korean and blind.key == "bl_ox" and {
+    blind.vars[1],
+    "를"
+} or nil
+
+if not vars and ox_vars then
+    loc_target = localize{type = 'raw_descriptions', key = blind.key, set = 'Blind', vars = ox_vars}
+end'''
+match_indent = true
+overwrite = false
+
+# 블라인드 선택 화면에서 황소의 설명에 나타나는 조사 처리
+# Steamodded가 설치되어 있으면 블라인드 API 때문에 원본 함수에 대한 패치가 먹히질 않음
+# 그래서 결국에는 호출되는 localize() 함수에 직접 관련 로직 적용
+[[patches]]
+[patches.pattern]
+target = "functions/misc_functions.lua"
+pattern = '''elseif args.type == 'raw_descriptions' then'''
+position = "after"
+payload = '''
+if G.LANG.key == "ko" and args.key == "bl_ox" then
+    table.insert(args.vars, get_josa_for_poker_hand(args.vars[1]))
+end'''
+match_indent = true
+overwrite = false
+
+# 황소와 전투 중일 때 나타나는 문구의 조사 처리
+[[patches]]
+[patches.pattern]
+target = "blind.lua"
+pattern = '''loc_vars = {localize(G.GAME.current_round.most_played_poker_hand, 'poker_hands')}'''
+position = "after"
+payload = '''
+if G.LANG.key == "ko" then
+    table.insert(loc_vars, get_josa_for_poker_hand(loc_vars[1]))
+end'''
+match_indent = true
+overwrite = false
+
+# 블라인드 컬렉션에서 'X2 칩 기본'을 '기본 칩의 2배'로 수정
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''{n=G.UIT.O, config={object = stake_sprite}},'''
+position = "before"
+payload = '''
+{n=G.UIT.T, config={text = is_korean and localize('k_x_base_1') or '', scale = 0.4, colour = G.C.RED}},'''
+match_indent = true
+overwrite = false
+
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''{n=G.UIT.T, config={text = blind.mult..localize('k_x_base'), scale = 0.4, colour = G.C.RED}},'''
+position = "at"
+payload = '''{n=G.UIT.T, config={text = is_korean and (localize('k_x_base_2')..blind.mult..localize('k_x_base_3')) or blind.mult..localize('k_x_base'), scale = 0.4, colour = G.C.RED}},'''
+match_indent = true
+overwrite = true
+
+# 궤도 태그 사용 시 나타나는 족보 이름이 번역되지 않은 상태로 나타나는 문제 수정
+[[patches]]
+[patches.pattern]
+target = "tag.lua"
+pattern = '''handname= self.ability.orbital_hand,'''
+position = "at"
+payload = '''handname = localize(self.ability.orbital_hand, "poker_hands"),'''
+match_indent = true
+overwrite = true
+
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = '''function Card:generate_UIBox_ability_table()'''
+position = "after"
+payload = '''
+local is_korean = G.LANG.key == "ko"'''
+match_indent = true
+overwrite = false
+
+# 우상 능력 설명의 조사 처리
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "elseif self.ability.name == 'The Idol'*"
+position = "after"
+payload = '''
+if is_korean then
+    table.insert(loc_vars, get_josa_for_rank(loc_vars[2]))
+end'''
+match_indent = true
+overwrite = false
+
+# 우편 할인 능력 설명의 조사 처리
+[[patches]]
+[patches.pattern]
+target = "card.lua"
+pattern = "elseif self.ability.name == 'Mail-In Rebate'*"
+position = "after"
+payload = '''
+if is_korean then
+    table.insert(loc_vars, get_josa_for_rank(loc_vars[2]))
+end'''
+match_indent = true
+overwrite = false
+
+# 궤도 태그 설명의 조사 처리
+[[patches]]
+[patches.pattern]
+target = "tag.lua"
+pattern = '''(self.ability.orbital_hand == '['..localize('k_poker_hand')..']') and self.ability.orbital_hand or localize(self.ability.orbital_hand, 'poker_hands'), self.config.levels}'''
+position = "after"
+payload = '''
+if G.LANG.key == "ko" then
+    table.insert(loc_vars, get_josa_for_poker_hand(loc_vars[1]))
+end'''
+match_indent = true
+overwrite = false
+
+# 한국어로 번역된 크레딧 적용
+[[patches]]
+[patches.pattern]
+target = "functions/UI_definitions.lua"
+pattern = '''function G.UIDEF.credits()'''
+position = "after"
+payload = '''
+if G.LANG.key == "ko" then
+    return korean_credits()
+end'''
+match_indent = true
+overwrite = false
