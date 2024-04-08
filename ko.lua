@@ -152,8 +152,8 @@ return {
                 ["name"] = "네거티브 태그",
                 ["text"] = {
                     [1] = "상점에 다음으로 등장하는",
-                    [2] = "에디션 없는 조커에",
-                    [3] = "{C:dark_edition}네거티브{}를 추가합니다"
+                    [2] = "에디션 없는 조커가",
+                    [3] = "무료 및 {C:dark_edition}네거티브{}가 됩니다"
                 }
             },
             ["tag_investment"] = {
@@ -168,14 +168,14 @@ return {
                 ["name"] = "홀로그래픽 태그",
                 ["text"] = {
                     [1] = "상점에 다음으로 등장하는",
-                    [2] = "에디션 없는 조커에",
-                    [3] = "{C:dark_edition}홀로그래픽{}을 추가합니다"
+                    [2] = "에디션 없는 조커가",
+                    [3] = "무료 및 {C:dark_edition}홀로그래픽{}이 됩니다"
                 }
             },
             ["tag_rare"] = {
                 ["name"] = "레어 태그",
                 ["text"] = {
-                    [1] = "상점에 {C:red}레어 조커{}가",
+                    [1] = "상점에 무료 {C:red}레어 조커{}가",
                     [2] = "나타납니다"
                 }
             },
@@ -199,8 +199,8 @@ return {
                 ["name"] = "포일 태그",
                 ["text"] = {
                     [1] = "상점에 다음으로 등장하는",
-                    [2] = "에디션 없는 조커에",
-                    [3] = "{C:dark_edition}포일{}을 추가합니다"
+                    [2] = "에디션 없는 조커가",
+                    [3] = "무료 및 {C:dark_edition}포일{}이 됩니다"
                 }
             },
             ["tag_buffoon"] = {
@@ -258,8 +258,8 @@ return {
                 ["name"] = "폴리크롬 태그",
                 ["text"] = {
                     [1] = "상점에 다음으로 등장하는",
-                    [2] = "에디션 없는 조커에",
-                    [3] = "{C:dark_edition}폴리크롬{}을 추가합니다"
+                    [2] = "에디션 없는 조커가",
+                    [3] = "무료 및 {C:dark_edition}폴리크롬{}이 됩니다"
                 }
             },
             ["tag_meteor"] = {
@@ -294,7 +294,7 @@ return {
             ["tag_uncommon"] = {
                 ["name"] = "희귀 태그",
                 ["text"] = {
-                    [1] = "상점에 {C:green}희귀 조커{}가",
+                    [1] = "상점에 무료 {C:green}희귀 조커{}가",
                     [2] = "나타납니다"
                 }
             },
@@ -1105,15 +1105,15 @@ return {
                 ["name"] = "검은색 판돈",
                 ["text"] = {
                     [1] = "상점에 {C:attention}영구{} 조커가 나타납니다",
-                    [2] = "{C:inactive,s:0.8}{판매하거나 파괴할 수 없습니다}",
+                    [2] = "{C:inactive,s:0.8}(판매하거나 파괴할 수 없습니다)",
                     [3] = "{s:0.8}모든 이전 판돈 적용"
                 }
             },
             ["stake_orange"] = {
                 ["name"] = "주황색 판돈",
                 ["text"] = {
-                    [1] = "앤티당 {C:attention}부스터 팩{} 비용이",
-                    [2] = "{C:money}$1{} 증가합니다",
+                    [1] = "상점에 {C:attention}소멸성{} 조커가 나타납니다",
+                    [2] = "{C:inactive,s:0.8}(5 라운드 뒤 디버프됩니다)",
                     [3] = "{s:0.8}모든 이전 판돈 적용"
                 }
             },
@@ -1128,8 +1128,9 @@ return {
             ["stake_gold"] = {
                 ["name"] = "황금색 판돈",
                 ["text"] = {
-                    [1] = "손패 크기 {C:red}-1{}장",
-                    [2] = "{s:0.8}모든 이전 판돈 적용"
+                    [1] = "상점에 {C:attention}대여{} 조커가 나타납니다",
+                    [2] = "{C:inactive,s:0.8}(매 라운드 {C:money,s:0.8}$3{C:inactive,s:0.8}를 소모합니다)",
+                    [3] = "{s:0.8}모든 이전 판돈 적용"
                 }
             }
         },
@@ -1543,9 +1544,10 @@ return {
             ["blue_seal"] = {
                 ["name"] = "파란색 인장",
                 ["text"] = {
-                    [1] = "라운드 종료 시",
-                    [2] = "이 카드가 손패에 {C:attention}남아 있으면{}",
-                    [3] = "{C:planet}행성{} 카드를 생성합니다"
+                    [1] = "라운드 종료 시 이 카드가 손패에",
+                    [2] = "{C:attention}남아 있으면{} 라운드에서 마지막으로",
+                    [3] = "플레이한 {C:attention}족보{}의 {C:planet}행성{} 카드를 생성합니다",
+                    [4] = "{C:inactive}(공간이 있어야 합니다)"
                 }
             },
             ["undiscovered_voucher"] = {
@@ -1600,6 +1602,21 @@ return {
                 ["text"] = {
                     [1] = "판매하거나",
                     [2] = "파괴할 수 없습니다"
+                }
+            },
+            ["perishable"] = {
+                ["name"] = "소멸성",
+                ["text"] = {
+                    [1] = "{C:attention}#1#{} 라운드 뒤",
+                    [2] = "디버프됩니다",
+                    [3] = "{C:inactive}({C:attention}#2#{C:inactive} 남음)"
+                }
+            },
+            ["rental"] = {
+                ["name"] = "대여",
+                ["text"] = {
+                    [1] = "라운드 종료 시",
+                    [2] = "{C:money}$#1#{}를 잃습니다"
                 }
             },
             ["purple_sticker"] = {
@@ -1713,9 +1730,9 @@ return {
             ["j_supernova"] = {
                 ["name"] = "초신성",
                 ["text"] = {
-                    [1] = "{C:attention}족보{}가 플레이된",
-                    [2] = "횟수를 배수에",
-                    [3] = "추가합니다"
+                    [1] = "이번 런에서 {C:attention}족보{}가",
+                    [2] = "플레이된 횟수를",
+                    [3] = "배수에 추가합니다"
                 }
             },
             ["j_droll"] = {
@@ -1742,8 +1759,8 @@ return {
                 ["name"] = "교령회",
                 ["text"] = {
                     [1] = "{C:attention}족보{}가 {C:attention}#1#{}인",
-                    [2] = "경우 무작위",
-                    [3] = "{C:spectral}유령{} 카드를 생성합니다",
+                    [2] = "경우 무작위 {C:spectral}유령{} 카드를",
+                    [3] = "생성합니다",
                     [4] = "{C:inactive}(공간이 있어야 합니다)"
                 }
             },
@@ -1790,16 +1807,16 @@ return {
                 },
                 ["name"] = "여행 출발",
                 ["text"] = {
-                    [1] = "이 라운드에서",
-                    [2] = "버린 {C:attention}잭{}마다",
-                    [3] = "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    [1] = "이 조커는 이번 라운드에서",
+                    [2] = "{C:attention}잭{}을 버릴 때마다",
+                    [3] = "배수 획득량이 {X:mult,C:white} X#1# {} 증가합니다",
                     [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
             },
             ["j_card_sharp"] = {
                 ["name"] = "야바위꾼",
                 ["text"] = {
-                    [1] = "이 라운드에서 이미 플레이된",
+                    [1] = "이번 라운드에서 이미 플레이한",
                     [2] = "{C:attention}족보{}를 플레이하면",
                     [3] = "{X:mult,C:white} X#1# {} 배수를 획득합니다"
                 }
@@ -1827,7 +1844,7 @@ return {
                     [1] = "{C:attention}1 랭크{} 간격이 있어도",
                     [2] = "{C:attention}스트레이트{}를",
                     [3] = "만들 수 있습니다",
-                    [4] = "{C:inactive}(예: {C:attention}2 3 5 7 8{C:inactive})"
+                    [4] = "{C:inactive}(예: {C:attention}10 8 6 5 3{C:inactive})"
                 }
             },
             ["j_luchador"] = {
@@ -1849,7 +1866,7 @@ return {
             ["j_steel_joker"] = {
                 ["name"] = "강철 조커",
                 ["text"] = {
-                    [1] = "이 조커는 전체 덱에 있는",
+                    [1] = "{C:attention}전체 덱{}에 있는",
                     [2] = "{C:attention}강철{} 카드마다",
                     [3] = "{X:mult,C:white} X#1# {} 배수를 획득합니다",
                     [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
@@ -1874,19 +1891,19 @@ return {
             ["j_hologram"] = {
                 ["name"] = "홀로그램",
                 ["text"] = {
-                    [1] = "덱에 추가된",
-                    [2] = "{C:attention}플레잉 카드{}마다",
-                    [3] = "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    [1] = "이 조커는 덱에 {C:attention}플레잉 카드{}가",
+                    [2] = "추가될 때마다 배수 획득량이",
+                    [3] = "{X:mult,C:white} X#1# {} 증가합니다",
                     [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
             },
             ["j_ride_the_bus"] = {
                 ["name"] = "버스 탑승",
                 ["text"] = {
-                    [1] = "{C:attention}그림{} 카드를",
+                    [1] = "이 조커는 {C:attention}그림{} 카드를",
                     [2] = "득점하지 않고 연속으로",
-                    [3] = "플레이한 핸드마다",
-                    [4] = "{C:mult}+#1#{} 배수를 획득합니다",
+                    [3] = "핸드를 플레이할 때마다",
+                    [4] = "배수 획득량이 {C:mult}+#1#{} 증가합니다",
                     [5] = "{C:inactive}(현재 {C:mult}+#2#{C:inactive} 배수)"
                 }
             },
@@ -1909,7 +1926,7 @@ return {
             ["j_square"] = {
                 ["name"] = "네모난 조커",
                 ["text"] = {
-                    [1] = "정확히 카드 {C:attention}4{}장으로 이루어진",
+                    [1] = "이 조커는 카드 {C:attention}4{}장으로 이루어진",
                     [2] = "핸드를 플레이할 때마다",
                     [3] = "칩 획득량이 {C:chips}+#2#{}개 증가합니다",
                     [4] = "{C:inactive}(현재 칩 {C:chips}#1#{}개)"
@@ -1974,9 +1991,9 @@ return {
             ["j_flash"] = {
                 ["name"] = "암기용 카드",
                 ["text"] = {
-                    [1] = "상점에서 {C:attention}새로고침{}할",
-                    [2] = "때마다 배수 획득량이",
-                    [3] = "{C:mult}+#1#{} 증가합니다",
+                    [1] = "이 조커는 상점에서",
+                    [2] = "{C:attention}새로고침{}할 때마다",
+                    [3] = "배수 획득량이 {C:mult}+#1#{} 증가합니다",
                     [4] = "{C:inactive}(현재 {C:mult}+#2#{C:inactive} 배수)"
                 }
             },
@@ -1999,7 +2016,7 @@ return {
             ["j_red_card"] = {
                 ["name"] = "레드카드",
                 ["text"] = {
-                    [1] = "{C:attention}부스터 팩{}을 건너뛰면",
+                    [1] = "이 조커는 {C:attention}부스터 팩{}을 건너뛰면",
                     [2] = "배수 획득량이 {C:red}+#1#{} 증가합니다",
                     [3] = "{C:inactive}(현재 {C:red}+#2#{C:inactive} 배수)"
                 }
@@ -2028,9 +2045,9 @@ return {
             ["j_trousers"] = {
                 ["name"] = "여벌 바지",
                 ["text"] = {
-                    [1] = "플레이한 핸드에 {C:attention}#2#{}",
-                    [2] = "포함 시 배수 획득량이",
-                    [3] = "{C:mult}+#1#{} 증가합니다",
+                    [1] = "이 조커는 플레이한 핸드에",
+                    [2] = "{C:attention}#2#{} 포함 시",
+                    [3] = "배수 획득량이 {C:mult}+#1#{} 증가합니다",
                     [4] = "{C:inactive}(현재 {C:red}+#3#{C:inactive} 배수)"
                 }
             },
@@ -2117,7 +2134,7 @@ return {
                 },
                 ["name"] = "즐거운 앤디",
                 ["text"] = {
-                    [1] = "버리기 {C:red}+#1#{}번",
+                    [1] = "라운드별 버리기 {C:red}+#1#{}번",
                     [2] = "손패 크기 {C:red}#2#{}장"
                 }
             },
@@ -2174,7 +2191,7 @@ return {
                 ["name"] = "음유시인",
                 ["text"] = {
                     [1] = "손패 크기 {C:attention}+#1#{}장",
-                    [2] = "라운드별 핸드 {C:red}-#2#{}번"
+                    [2] = "라운드별 핸드 {C:blue}-#2#{}번"
                 }
             },
             ["j_wrathful_joker"] = {
@@ -2188,7 +2205,7 @@ return {
             ["j_lucky_cat"] = {
                 ["name"] = "행운의 고양이",
                 ["text"] = {
-                    [1] = "{C:attention}행운{} 카드가 {C:green}성공적으로{}",
+                    [1] = "이 조커는 {C:attention}행운{} 카드가 {C:green}성공적으로",
                     [2] = "발동할 때마다 배수 획득량이",
                     [3] = "{X:mult,C:white} X#1# {} 증가합니다",
                     [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
@@ -2210,10 +2227,10 @@ return {
             ["j_obelisk"] = {
                 ["name"] = "오벨리스크",
                 ["text"] = {
-                    [1] = "가장 많이 플레이한",
+                    [1] = "이 조커는 가장 많이 플레이한",
                     [2] = "{C:attention}족보{}를 사용하지 않고",
-                    [3] = "연속으로 플레이한 핸드마다",
-                    [4] = "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    [3] = "연속으로 핸드를 플레이할 때마다",
+                    [4] = "배수 획득량이 {X:mult,C:white} X#1# {} 증가합니다",
                     [5] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
             },
@@ -2232,8 +2249,8 @@ return {
                 },
                 ["name"] = "유리 조커",
                 ["text"] = {
-                    [1] = "{C:attention}유리 카드{}가",
-                    [2] = "파괴되면 배수 획득량이",
+                    [1] = "이 조커는 {C:attention}유리 카드{}가",
+                    [2] = "파괴될 때마다 배수 획득량이",
                     [3] = "{X:mult,C:white} X#1# {} 증가합니다",
                     [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
@@ -2284,7 +2301,7 @@ return {
                 },
                 ["name"] = "회상",
                 ["text"] = {
-                    [1] = "이 런에서 건너뛴",
+                    [1] = "이번 런에서 건너뛴",
                     [2] = "{C:planet}블라인드{}마다",
                     [3] = "{X:mult,C:white} X#1# {} 배수를 획득합니다",
                     [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
@@ -2358,9 +2375,9 @@ return {
                 },
                 ["name"] = "화분",
                 ["text"] = {
-                    [1] = "{C:diamonds}다이아몬드{} 카드, {C:clubs}클럽{} 카드,",
-                    [2] = "{C:hearts}하트{} 카드, {C:spades}스페이드{} 카드를",
-                    [3] = "모두 플레이해 득점하면",
+                    [1] = "족보에 {C:diamonds}다이아몬드{} 카드,",
+                    [2] = "{C:clubs}클럽{} 카드, {C:hearts}하트{} 카드,",
+                    [3] = "{C:spades}스페이드{} 카드가 모두 포함 시",
                     [4] = "{X:mult,C:white} X#1# {} 배수를 획득합니다"
                 }
             },
@@ -2375,7 +2392,7 @@ return {
             ["j_midas_mask"] = {
                 ["name"] = "미다스 가면",
                 ["text"] = {
-                    [1] = "플레이한 모든",
+                    [1] = "플레이해 득점한 모든",
                     [2] = "{C:attention}그림{} 카드가",
                     [3] = "{C:attention}황금{} 카드로 바뀝니다"
                 }
@@ -2391,7 +2408,7 @@ return {
             ["j_drunkard"] = {
                 ["name"] = "술고래",
                 ["text"] = {
-                    [1] = "버리기 {C:red}+#1#{}번"
+                    [1] = "라운드별 버리기 {C:red}+#1#{}번"
                 }
             },
             ["j_diet_cola"] = {
@@ -2456,9 +2473,9 @@ return {
             ["j_8_ball"] = {
                 ["name"] = "8번 공",
                 ["text"] = {
-                    [1] = "플레이한 핸드에",
-                    [2] = "{C:attention}8{}이 {C:attenetion}#1#{}장 이상 있으면",
-                    [3] = "{C:planet}행성{} 카드 한 장을 생성합니다",
+                    [1] = "{C:attention}8{}을 플레이해 득점할 때마다",
+                    [2] = "{C:green}#1#/#2#{} 확률로 {C:tarot}타로{} 카드",
+                    [3] = "한 장을 생성합니다",
                     [4] = "{C:inactive}(공간이 있어야 합니다)"
                 }
             },
@@ -2560,14 +2577,14 @@ return {
                 ["text"] = {
                     [1] = "{C:attention}족보{}가 {C:attention}#2#{}인 경우",
                     [2] = "{C:money}$#1#{}를 획득합니다",
-                    [3] = "대상 족보는 돈을 획득할",
-                    [4] = "때마다 변경됩니다"
+                    [3] = "대상 족보는 라운드 종료 시",
+                    [4] = "변경됩니다"
                 }
             },
             ["j_constellation"] = {
                 ["name"] = "별자리",
                 ["text"] = {
-                    [1] = "{C:planet}행성{} 카드를 사용하면",
+                    [1] = "이 조커는 {C:planet}행성{} 카드를 사용하면",
                     [2] = "배수 획득량이 {X:mult,C:white} X#1# {} 증가합니다",
                     [3] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
@@ -2583,7 +2600,7 @@ return {
             ["j_stone"] = {
                 ["name"] = "석재 조커",
                 ["text"] = {
-                    [1] = "이 조커는 전체 덱에 있는",
+                    [1] = "{C:attention}전체 덱에{} 있는",
                     [2] = "{C:attention}석재{} 카드마다",
                     [3] = "칩 {C:chips}+#1#{}개를 획득합니다",
                     [4] = "{C:inactive}(현재 칩 {C:chips}+#2#{C:inactive}개)"
@@ -2608,7 +2625,7 @@ return {
             ["j_bull"] = {
                 ["name"] = "황소",
                 ["text"] = {
-                    [1] = "보유 중인 {C:money}달러{}마다",
+                    [1] = "보유 중인 {C:money}$1{}마다",
                     [2] = "칩 {C:chips}+#1#{}개를 획득합니다",
                     [3] = "{C:inactive}(현재 칩 {C:chips}+#2#{C:inactive}개)"
                 }
@@ -2691,8 +2708,8 @@ return {
                 },
                 ["name"] = "해적",
                 ["text"] = {
-                    [1] = "이 카드의 왼쪽에 있는",
-                    [2] = "모든 {C:attention}조커{}의 판매 가치를",
+                    [1] = "보유 중인 다른 모든",
+                    [2] = "{C:attention}조커{}의 판매 가치를",
                     [3] = "배수에 추가합니다",
                     [4] = "{C:inactive}(현재 {C:mult}+#1#{C:inactive} 배수)"
                 }
@@ -2719,8 +2736,8 @@ return {
                 },
                 ["name"] = "카니오",
                 ["text"] = {
-                    [1] = "{C:attention}그림{} 카드가 파괴되면",
-                    [2] = "배수 획득량이",
+                    [1] = "이 조커는 {C:attention}그림{} 카드가",
+                    [2] = "파괴될 때마다 배수 획득량이",
                     [3] = "{X:mult,C:white} X#1# {} 증가합니다",
                     [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
@@ -2732,9 +2749,9 @@ return {
                 },
                 ["name"] = "매달린 종이 조각",
                 ["text"] = {
-                    [1] = "득점에 사용된",
-                    [2] = "{C:attention}첫 번째{}로 플레이한",
-                    [3] = "카드를 다시 발동합니다"
+                    [1] = "플레이해 득점한",
+                    [2] = "{C:attention}첫 번째{} 카드를 {C:attention}#1#{}번",
+                    [3] = "다시 발동합니다"
                 }
             },
             ["j_crazy"] = {
@@ -2748,10 +2765,11 @@ return {
             ["j_vampire"] = {
                 ["name"] = "뱀파이어",
                 ["text"] = {
-                    [1] = "플레이한 {C:attention}강화된 카드{}마다",
-                    [2] = "배수 획득량이 {X:mult,C:white} X#1# {} 증가하고",
-                    [3] = "해당 카드들의 {C:attention}강화{}를 제거합니다",
-                    [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
+                    [1] = "이 조커는 플레이해 득점한",
+                    [2] = "{C:attention}강화된 카드{}마다 배수 획득량이",
+                    [3] = "{X:mult,C:white} X#1# {} 증가하고 해당 카드들의",
+                    [4] = "{C:attention}강화{}를 제거합니다",
+                    [5] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
             },
             ["j_tribe"] = {
@@ -2822,7 +2840,8 @@ return {
                 ["name"] = "황금 티켓",
                 ["text"] = {
                     [1] = "{C:attention}황금{} 카드를 플레이해",
-                    [2] = "득점하면 {C:money}$#1#{}를 획득합니다"
+                    [2] = "득점할 때마다",
+                    [3] = "{C:money}$#1#{}를 획득합니다"
                 }
             },
             ["j_seeing_double"] = {
@@ -2875,10 +2894,11 @@ return {
             ["j_madness"] = {
                 ["name"] = "광기",
                 ["text"] = {
-                    [1] = "{C:attention}블라인드{}를 선택하면",
-                    [2] = "배수 획득량이 {X:mult,C:white} X#1# {} 증가하고",
-                    [3] = "무작위 조커 한 장을 {C:attention}파괴합니다",
-                    [4] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
+                    [1] = "{C:attention}스몰 블라인드{} 또는",
+                    [2] = "{C:attention}빅 블라인드{}를 선택하면",
+                    [3] = "배수 획득량이 {X:mult,C:white} X#1# {} 증가하고",
+                    [4] = "무작위 조커 한 장을 {C:attention}파괴합니다",
+                    [5] = "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)"
                 }
             },
             ["j_family"] = {
@@ -2902,7 +2922,8 @@ return {
                 ["name"] = "자수성가",
                 ["text"] = {
                     [1] = "보유 중인 {C:money}$#2#{}마다",
-                    [2] = "{C:mult}+#1#{} 배수를 획득합니다"
+                    [2] = "{C:mult}+#1#{} 배수를 획득합니다",
+                    [3] = "{C:inactive}(현재 {C:mult}+#3#{C:inactive} 배수)"
                 }
             },
             ["j_juggler"] = {
@@ -3076,9 +3097,10 @@ return {
                 },
                 ["name"] = "요릭",
                 ["text"] = {
-                    [1] = "버리기를 {C:attention}#2#{}번 사용한 뒤",
-                    [2] = "{X:mult,C:white} X#1# {} 배수를 획득합니다",
-                    [3] = "{C:inactive}(남은 버리기: {C:attention}#3#{C:inactive}번)"
+                    [1] = "이 조커는 카드를",
+                    [2] = "{C:attention}#2#{}장 버릴 때마다 {C:inactive}[#3#장 남음]",
+                    [3] = "배수 획득량이 {X:mult,C:white} X#1# {} 증가합니다",
+                    [4] = "{C:inactive}(현재 {X:mult,C:white} X#4# {C:inactive} 배수)"
                 }
             },
             ["j_business"] = {
@@ -3501,6 +3523,7 @@ return {
             ["ph_no_boss_active"] = "활성화된 보스 없음",
             ["k_skipped_cap"] = "건너뜀",
             ["b_high_contrast_cards"] = "고대비 카드",
+            ["b_reduced_motion"] = "움직임 감소",
             ["b_set_play_discard_pos"] = "플레이/버리기 버튼 위치",
             ["k_playing_as"] = "플레이 이름:",
             ["k_unlocked_ex"] = "해제됨!",
@@ -3619,7 +3642,7 @@ return {
             },
             ["b_unlock_all"] = "모두 잠금 해제",
             ["k_legendary"] = "레전더리",
-            ["b_skip_reward"] = "보상 건너뛰기",
+            ["b_skip_reward"] = "건너뛰기 보상",
             ["k_rank"] = "랭크",
             ["b_set_windowmode"] = "창 모드",
             ["ph_boss_disabled"] = "보스 비활성화됨!",
@@ -3766,6 +3789,7 @@ return {
             ["k_enter_name"] = "이름 입력",
             ["ph_defeat_the_boss"] = "보스 블라인드에 승리",
             ["k_extinct_ex"] = "멸종함!",
+            ["k_disabled_ex"] = "비활성화됨!",
             ["k_seed"] = "시드",
             ["k_uncommon"] = "희귀",
             ["k_melted_ex"] = "녹음!",
@@ -4114,6 +4138,8 @@ return {
             ["pinned_left"] = "고정",
             ["legendary"] = "레전더리",
             ["eternal"] = "영구",
+            ["perishable"] = "소멸성",
+            ["rental"] = "대여",
             ["holographic"] = "홀로그래픽",
             ["uncommon"] = "희귀",
             ["planet"] = "행성",
