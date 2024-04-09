@@ -33,16 +33,19 @@ function apply_properkorean()
     end
 end
 
-function get_josa_for_rank(rank)
+function get_josa_for_rank(rank, is_ga)
     local eul = {"3", "6", "7", "8", "10", "잭", "퀸", "킹"}
+    local ga = {"2", "4", "5", "9", "에이스"}
+    local result = is_ga and "이" or "를"
 
-    for _, v in pairs(eul) do
+    for _, v in pairs(is_ga and ga or eul) do
         if v == rank then
-            return "을"
+            result = is_ga and "가" or "을"
+            break
         end
     end
 
-    return "를"
+    return result
 end
 
 function get_josa_for_poker_hand(hand)

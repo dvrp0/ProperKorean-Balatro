@@ -459,18 +459,18 @@ return {
             j_ancient = {
                 name = "고대 조커",
                 text = {
-                    "{V:1}#2#{} 문양 카드를",
-                    "플레이해 득점할 때마다",
-                    "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{V:1}#2#{} 문양 카드가",
+                    "{X:mult,C:white} X#1# {} 배수를 부여합니다",
                     "{s:0.8}라운드 종료 시 문양이 변경됩니다",
                 },
             },
             j_arrowhead = {
                 name = "화살촉",
                 text = {
-                    "{C:spades}스페이드{} 문양 카드를",
-                    "플레이해 득점할 때마다",
-                    "칩 {C:chips}+#1#{}개를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:spades}스페이드{} 문양 카드가",
+                    "칩 {C:chips}+#1#{}개를 부여합니다",
                 },
                 unlock = {
                     "덱에",
@@ -500,15 +500,15 @@ return {
             j_baron = {
                 name = "남작",
                 text = {
-                    "손패에 남아 있는 {C:attention}킹{}마다",
-                    "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    "손패에 남아 있는 각 {C:attention}킹{}이",
+                    "{X:mult,C:white} X#1# {} 배수를 부여합니다",
                 },
             },
             j_baseball = {
                 name = "야구 카드",
                 text = {
-                    "각 {C:green}희귀{} 조커마다",
-                    "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    "각 {C:green}희귀{} 조커가",
+                    "{X:mult,C:white} X#1# {} 배수를 부여합니다",
                 },
             },
             j_blackboard = {
@@ -522,10 +522,10 @@ return {
             j_bloodstone = {
                 name = "혈석",
                 text = {
-                    "{C:hearts}하트{} 문양 카드를",
-                    "플레이해 득점할 때마다",
+                    "플레이해 득점한",
+                    "{C:hearts}하트{} 문양 카드가",
                     "{C:green}#1#/#2#{} 확률로",
-                    "{X:mult,C:white} X#3# {} 배수를 획득합니다",
+                    "{X:mult,C:white} X#3# {} 배수를 부여합니다",
                 },
                 unlock = {
                     "덱에",
@@ -606,9 +606,9 @@ return {
             j_business = {
                 name = "명함",
                 text = {
-                    "{C:attention}그림{} 카드를 플레이해",
-                    "득점할 때마다 {C:green}#1#/#2#{} 확률로",
-                    "{C:money}$2{}를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:attention}그림{} 카드가 {C:green}#1#/#2#{} 확률로",
+                    "{C:money}$2{}를 지급합니다",
                 },
             },
             j_caino = {
@@ -864,9 +864,9 @@ return {
             j_even_steven = {
                 name = "짝수 짝궁",
                 text = {
-                    "{C:attention}짝수{} 랭크 카드를",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:attention}짝수{} 랭크 카드가",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                     "{C:inactive}(10, 8, 6, 4, 2)",
                 },
             },
@@ -895,9 +895,9 @@ return {
             j_fibonacci = {
                 name = "피보나치",
                 text = {
-                    "{C:attention}에이스{}, {C:attention}2{}, {C:attention}3{}, {C:attention}5{}, {C:attention}8{}을",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:attention}에이스{}, {C:attention}2{}, {C:attention}3{}, {C:attention}5{}, {C:attention}8{}이",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
             },
             j_flash = {
@@ -964,9 +964,9 @@ return {
             j_gluttenous_joker = {
                 name = "탐욕스러운 조커",
                 text = {
-                    "{C:clubs}#2#{} 문양 카드를",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:clubs}#2#{} 문양 카드가",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
             },
             j_golden = {
@@ -979,9 +979,9 @@ return {
             j_greedy_joker = {
                 name = "인색한 조커",
                 text = {
-                    "{C:diamonds}#2#{} 문양 카드를",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:diamonds}#2#{} 문양 카드가",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
             },
             j_green_joker = {
@@ -1081,9 +1081,9 @@ return {
             j_idol = {
                 name = "우상",
                 text = {
+                    "플레이해 득점한",
                     "{V:1}#3#{}의 {C:attention}#2#{}#4#",
-                    "플레이해 득점할 때마다",
-                    "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    "{X:mult,C:white} X#1# {} 배수를 부여합니다",
                     "카드는 매 라운드 변경됩니다",
                 },
                 unlock = {
@@ -1154,9 +1154,9 @@ return {
             j_lusty_joker = {
                 name = "음욕의 조커",
                 text = {
-                    "{C:hearts}#2#{} 문양 카드를",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:hearts}#2#{} 문양 카드가",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
             },
             j_mad = {
@@ -1274,18 +1274,18 @@ return {
             j_odd_todd = {
                 name = "홀수 홀씨",
                 text = {
-                    "{C:attention}홀수{} 랭크 카드를",
-                    "플레이해 득점할 때마다",
-                    "칩 {C:chips}+#1#{}개를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:attention}홀수{} 랭크 카드가",
+                    "칩 {C:chips}+#1#{}개를 부여합니다",
                     "{C:inactive}(A, 9, 7, 5, 3)",
                 },
             },
             j_onyx_agate = {
                 name = "흑마노",
                 text = {
-                    "{C:clubs}클럽{} 문양 카드를",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:clubs}클럽{} 문양 카드가",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
                 unlock = {
                     "덱에",
@@ -1342,9 +1342,9 @@ return {
             j_photograph = {
                 name = "사진",
                 text = {
-                    "처음 플레이한",
-                    "{C:attention}그림{} 카드가 득점하면",
-                    "{X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "첫 번째 {C:attention}그림{} 카드가",
+                    "{X:mult,C:white} X#1# {} 배수를 부여합니다",
                 },
             },
             j_popcorn = {
@@ -1383,9 +1383,9 @@ return {
                 name = "지정 주차 공간",
                 text = {
                     "손패에 남아 있는",
-                    "{C:attention}그림{} 카드마다",
+                    "각 {C:attention}그림{} 카드가",
                     "{C:green}#2#/#3#{} 확률로",
-                    "{C:money}$#1#{}를 획득합니다",
+                    "{C:money}$#1#{}를 지급합니다",
                 },
             },
             j_ride_the_bus = {
@@ -1465,18 +1465,17 @@ return {
             j_scary_face = {
                 name = "무서운 얼굴",
                 text = {
-                    "{C:attention}그림{} 카드를",
-                    "플레이해 득점할 때마다",
-                    "칩 {C:chips}+#1#{}개를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:attention}그림{} 카드가",
+                    "칩 {C:chips}+#1#{}개를 부여합니다",
                 },
             },
             j_scholar = {
                 name = "장학생",
                 text = {
-                    "에이스를 플레이해",
-                    "득점할 때마다",
-                    "{C:mult}+#1#{} 배수 및 칩 {C:chips}+#2#{}개를",
-                    "획득합니다",
+                    "플레이해 득점한",
+                    "에이스가 {C:mult}+#1#{} 배수 및",
+                    "칩 {C:chips}+#2#{}개를 부여합니다"
                 },
             },
             j_seance = {
@@ -1512,8 +1511,8 @@ return {
             j_shoot_the_moon = {
                 name = "슛 더 문",
                 text = {
-                    "손패에 남아 있는 {C:attention}퀸{}마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "손패에 남아 있는 각 {C:attention}퀸{}이",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
                 unlock = {
                     "덱에 있는",
@@ -1563,9 +1562,9 @@ return {
             j_smiley = {
                 name = "웃는 얼굴",
                 text = {
-                    "{C:attention}그림{} 카드를",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:attention}그림{} 카드가",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
             },
             j_sock_and_buskin = {
@@ -1743,9 +1742,9 @@ return {
             j_triboulet = {
                 name = "트리불레",
                 text = {
-                    "{C:attention}킹{}과 {C:attention}퀸{}을",
-                    "플레이해 득점할 때마다",
-                    "각각 {X:mult,C:white} X#1# {} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "각 {C:attention}킹{}과 {C:attention}퀸{}이",
+                    "{X:mult,C:white} X#1# {} 배수를 부여합니다",
                 },
                 unlock = {
                     "{E:1,s:1.3}?????",
@@ -1814,9 +1813,9 @@ return {
             j_walkie_talkie = {
                 name = "휴대용 무전기",
                 text = {
-                    "{C:attention}10{} 또는 {C:attention}4{}를 플레이해",
-                    "득점할 때마다 칩 {C:chips}+#1#{}개와",
-                    "{C:mult}+#2#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:attention}10{} 또는 {C:attention}4{}가 칩 {C:chips}+#1#{}개와",
+                    "{C:mult}+#2#{} 배수를 부여합니다",
                 },
             },
             j_wee = {
@@ -1843,9 +1842,9 @@ return {
             j_wrathful_joker = {
                 name = "분노하는 조커",
                 text = {
-                    "{C:spades}#2#{} 문양 카드를",
-                    "플레이해 득점할 때마다",
-                    "{C:mult}+#1#{} 배수를 획득합니다",
+                    "플레이해 득점한",
+                    "{C:spades}#2#{} 문양 카드가",
+                    "{C:mult}+#1#{} 배수를 부여합니다",
                 },
             },
             j_yorick = {
@@ -3110,9 +3109,9 @@ return {
                 name = "천문대",
                 text = {
                     "{C:attention}소모품{} 구역에 있는",
-                    "{C:planet}행성{} 카드에 해당하는",
-                    "{C:attention}족보{}를 플레이하면",
-                    "{X:red,C:white} X#1# {} 배수를 획득합니다",
+                    "{C:planet}행성{} 카드가 자신과 일치하는",
+                    "{C:attention}족보{}가 플레이되면",
+                    "{X:red,C:white} X#1# {} 배수를 부여합니다",
                 },
                 unlock = {
                     "아무 {C:planet}천체 팩{}에서",
