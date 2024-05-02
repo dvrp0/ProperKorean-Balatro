@@ -21,16 +21,6 @@ apply_properkorean()'''
 match_indent = true
 overwrite = false
 
-# 베타 버전에서 비활성화된 언어 변경 기능 활성화
-[[patches]]
-[patches.pattern]
-target = "globals.lua"
-pattern = '''self.F_ENGLISH_ONLY = true'''
-position = "at"
-payload = '''self.F_ENGLISH_ONLY = false'''
-match_indent = true
-overwrite = true
-
 # Steamodded 설치 시 기본적으로 업적이 비활성화되기 때문에
 # 언어를 변경할 수 없는 부분 수정
 [[patches]]
