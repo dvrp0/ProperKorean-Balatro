@@ -286,7 +286,7 @@ pattern = "elseif self.ability.name == 'The Idol'*"
 position = "after"
 payload = '''
 if is_korean then
-    table.insert(loc_vars, get_josa_for_rank(loc_vars[2]))
+    table.insert(loc_vars, get_josa_for_rank(loc_vars[2], true))
 end'''
 match_indent = true
 overwrite = false
