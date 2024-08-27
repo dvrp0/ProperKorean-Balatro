@@ -3393,6 +3393,24 @@ return {
             c_typecast_1 = "정형화",
             c_xray_1 = "투시력",
         },
+        collabs = {
+            Clubs = {
+                ["1"] = "기본",
+                ["2"] = "Vampire Survivors",
+            },
+            Diamonds = {
+                ["1"] = "기본",
+                ["2"] = "데이브 더 다이버",
+            },
+            Hearts = {
+                ["1"] = "기본",
+                ["2"] = "Among Us",
+            },
+            Spades = {
+                ["1"] = "기본",
+                ["2"] = "더 위쳐",
+            },
+        },
         dictionary = {
             ['$'] = "$",
             b_and_use = "및 사용",
@@ -3410,6 +3428,7 @@ return {
             b_create_profile = "프로필 생성",
             b_credits = "크레딧",
             b_current_profile = "현재 프로필",
+            b_customize_deck = "덱 사용자 지정",
             b_deck = "덱",
             b_decks = "덱",
             b_delete_profile = "프로필 삭제",
@@ -3708,6 +3727,7 @@ return {
             ph_defeat_this_blind_2 = "발견합니다",
             ph_demo_thanks_1 = "BALATRO 체험판을",
             ph_demo_thanks_2 = "플레이해 주셔서 감사합니다",
+            ph_display_stickers = "런 중 판돈 스티커 표시",
             ph_game_over = "게임 오버",
             ph_improve_run = "런을 업그레이드하세요!",
             ph_most_played = "(최다 플레이 족보)",
