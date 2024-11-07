@@ -5,7 +5,7 @@ return {
                 name = "버려진 덱",
                 text = {
                     "덱에 {C:attention}그림 카드{} 없이",
-                    "런을 시작합니다",
+                    "게임을 시작합니다",
                 },
             },
             b_anaglyph = {
@@ -41,7 +41,7 @@ return {
                 text = {
                     "덱에 {C:attention}26{}장의 {C:spades}스페이드{} 및",
                     "{C:attention}26{}장의 {C:hearts}하트{}를 갖고",
-                    "런을 시작합니다",
+                    "게임을 시작합니다",
                 },
             },
             b_erratic = {
@@ -73,7 +73,7 @@ return {
                 text = {
                     "{C:tarot,T:v_crystal_ball}#1#{} 바우처 및",
                     "{C:tarot,T:c_fool}#2# {C:attention}2{}장을 갖고",
-                    "런을 시작합니다",
+                    "게임을 시작합니다",
                 },
             },
             b_nebula = {
@@ -82,7 +82,7 @@ return {
                     "{C:planet,T:v_telescope}#1#{} 바우처 및",
                     "소모품 슬롯 {C:red}#2#{}개로",
                     "",
-                    "런을 시작합니다",
+                    "게임을 시작합니다",
                 },
             },
             b_painted = {
@@ -120,7 +120,7 @@ return {
                     "{C:tarot,T:v_tarot_merchant}#1#{},",
                     "{C:planet,T:v_planet_merchant}#2#{},",
                     "{C:attention,T:v_overstock_norm}#3#를 갖고",
-                    "런을 시작합니다",
+                    "게임을 시작합니다",
                 },
             },
         },
@@ -548,7 +548,7 @@ return {
                     "능력을 복사합니다",
                 },
                 unlock = {
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_bootstraps = {
@@ -699,8 +699,8 @@ return {
             j_chaos = {
                 name = "혼돈의 광대",
                 text = {
-                    "상점마다 새로고침을",
-                    "{C:green}#1#{}번 무료로 할 수 있습니다",
+                    "상점마다 {C:green}새로고침{}을",
+                    "{C:attention}#1#{}번 무료로 할 수 있습니다",
                 },
             },
             j_chicot = {
@@ -832,7 +832,7 @@ return {
                 unlock = {
                     "{E:1,C:attention}#1#{}를",
                     "플레이하지 않고",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_dusk = {
@@ -889,7 +889,7 @@ return {
                 unlock = {
                     "{E:1,C:attention}#1#{}를",
                     "플레이하지 않고",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_fibonacci = {
@@ -925,7 +925,7 @@ return {
             j_fortune_teller = {
                 name = "점쟁이",
                 text = {
-                    "이번 런에서 사용한",
+                    "이번 게임에서 사용한",
                     "{C:purple}타로{} 카드마다",
                     "{C:red}+#1#{} 배수를 획득합니다",
                     "{C:inactive}(현재 {C:red}+#2#{C:inactive})",
@@ -1101,7 +1101,7 @@ return {
                     "{C:inactive}(현재 {C:attention}#2#{C:inactive}/#1# 라운드)",
                 },
                 unlock = {
-                    "런 내내",
+                    "게임 내내",
                     "{E:1,C:attention}조커를 4장 이하{}로",
                     "유지하며 승리",
                 },
@@ -1214,7 +1214,7 @@ return {
                 },
                 unlock = {
                     "{E:1,C:attention}#1#{} 라운드 안에",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_midas_mask = {
@@ -1249,7 +1249,7 @@ return {
                     "{S:1.1,C:red,E:2}스스로 파괴됩니다{}",
                 },
                 unlock = {
-                    "런 {C:attention,E:1}#1#{}번 패배",
+                    "게임 {C:attention,E:1}#1#{}번 패배",
                     "{C:inactive}(#2#)",
                 },
             },
@@ -1316,7 +1316,7 @@ return {
                 unlock = {
                     "{E:1,C:attention}#1#{}를",
                     "플레이하지 않고",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_pareidolia = {
@@ -1453,7 +1453,7 @@ return {
                 name = "인공위성",
                 text = {
                     "라운드 종료 시",
-                    "이번 런에서 사용한 {C:planet}행성{} 카드",
+                    "이번 게임에서 사용한 {C:planet}행성{} 카드",
                     "한 종류마다 {C:money}$#1#{}를 획득합니다",
                     "{C:inactive}(현재 {C:money}$#2#{C:inactive})",
                 },
@@ -1549,9 +1549,9 @@ return {
             j_smeared = {
                 name = "문질러진 조커",
                 text = {
-                    "{C:diamonds}하트{}와 {C:diamonds}다이아몬드{}가",
+                    "{C:hearts}하트{}와 {C:diamonds}다이아몬드{}가",
                     "같은 문양으로 취급되며",
-                    "{C:spades}스페이드{}와 {C:spades}클럽{}이",
+                    "{C:spades}스페이드{}와 {C:clubs}클럽{}이",
                     "같은 문양으로 취급됩니다",
                 },
                 unlock = {
@@ -1645,7 +1645,7 @@ return {
             j_supernova = {
                 name = "초신성",
                 text = {
-                    "이번 런에서 {C:attention}족보{}가",
+                    "이번 게임에서 {C:attention}족보{}가",
                     "플레이된 횟수를",
                     "배수에 추가합니다",
                 },
@@ -1676,14 +1676,14 @@ return {
             j_throwback = {
                 name = "회상",
                 text = {
-                    "이번 런에서 건너뛴",
-                    "{C:planet}블라인드{}마다",
+                    "이번 게임에서 건너뛴",
+                    "{C:attention}블라인드{}마다",
                     "{X:mult,C:white} X#1# {} 배수를 획득합니다",
                     "{C:inactive}(현재 {X:mult,C:white} X#2# {C:inactive} 배수)",
                 },
                 unlock = {
                     "메인 메뉴에서",
-                    "저장된 런을",
+                    "저장된 게임을",
                     "계속 플레이",
                 },
             },
@@ -1736,7 +1736,7 @@ return {
                 unlock = {
                     "{E:1,C:attention}#1#{}를",
                     "플레이하지 않고",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_triboulet = {
@@ -1760,7 +1760,7 @@ return {
                 unlock = {
                     "{E:1,C:attention}#1#{}을",
                     "플레이하지 않고",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_troubadour = {
@@ -1787,7 +1787,7 @@ return {
             j_turtle_bean = {
                 name = "검은콩",
                 text = {
-                    "손패 크기 {C:attention}+#1#{}장",
+                    "손패 크기 {C:attention}+#1#{}장,",
                     "매 라운드마다 {C:red}#2#{}씩",
                     "감소합니다",
                 },
@@ -1828,7 +1828,7 @@ return {
                 },
                 unlock = {
                     "{E:1,C:attention}#1#{} 라운드 안에",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             j_wily = {
@@ -1908,7 +1908,7 @@ return {
                 name = "잠김",
                 text = {
                     "최소 #1#개의 다른 덱으로",
-                    "런을 승리해",
+                    "게임을 승리해",
                     "도전 모드 해제",
                     "{C:attention,s:2}#2#/#1#",
                 },
@@ -1940,7 +1940,7 @@ return {
                 name = "잠김",
                 text = {
                     "최소 {V:1}#1#{} 난이도에서",
-                    "아무 덱으로 런 승리",
+                    "아무 덱으로 게임 승리",
                 },
             },
             deck_locked_win = {
@@ -1948,7 +1948,7 @@ return {
                 text = {
                     "아무 난이도에서",
                     "{C:attention}#1#{}으로",
-                    "런 승리",
+                    "게임 승리",
                 },
             },
             demo_locked = {
@@ -2205,7 +2205,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 팩을 열어",
+                    "게임에서 이 팩을 열어",
                     "기능을 알아보세요",
                 },
             },
@@ -2213,7 +2213,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 에디션을 찾아",
+                    "게임에서 이 에디션을 찾아",
                     "기능을 알아보세요",
                 },
             },
@@ -2221,7 +2221,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 카드를",
+                    "게임에서 이 카드를",
                     "구매하거나 사용하여",
                     "기능을 알아보세요",
                 },
@@ -2230,7 +2230,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 카드를",
+                    "게임에서 이 카드를",
                     "구매하거나 사용하여",
                     "기능을 알아보세요",
                 },
@@ -2239,7 +2239,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 카드를",
+                    "게임에서 이 카드를",
                     "구매하거나 사용하여",
                     "기능을 알아보세요",
                 },
@@ -2248,7 +2248,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 태그를 사용해",
+                    "게임에서 이 태그를 사용해",
                     "기능을 알아보세요",
                 },
             },
@@ -2256,7 +2256,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 카드를",
+                    "게임에서 이 카드를",
                     "구매하거나 사용하여",
                     "기능을 알아보세요",
                 },
@@ -2265,7 +2265,7 @@ return {
                 name = "발견되지 않음",
                 text = {
                     "시드를 설정하지 않은",
-                    "런에서 이 바우처를",
+                    "게임에서 이 바우처를",
                     "사용하여 기능을",
                     "알아보세요",
                 },
@@ -2516,7 +2516,7 @@ return {
             c_soul = {
                 name = "영혼",
                 text = {
-                    "{C:legendary,E:1}레전더리{} 조커를",
+                    "{C:legendary,E:1}전설{} 조커를",
                     "생성합니다",
                     "{C:inactive}(공간이 있어야 합니다)",
                 },
@@ -2679,7 +2679,7 @@ return {
             tag_garbage = {
                 name = "쓰레기 태그",
                 text = {
-                    "이번 런에서 사용하지 않은",
+                    "이번 게임에서 사용하지 않은",
                     "{C:red}버리기{}마다 {C:money}$#1#{}를 획득합니다",
                     "{C:inactive}({C:money}$#2#{C:inactive} 획득 예정)",
                 },
@@ -2687,7 +2687,7 @@ return {
             tag_handy = {
                 name = "손재주 태그",
                 text = {
-                    "이번 런에서 플레이한",
+                    "이번 게임에서 플레이한",
                     "{C:blue}핸드{}마다 {C:money}$#1#{}를 획득합니다",
                     "{C:inactive}({C:money}$#2#{C:inactive} 획득 예정)",
                 },
@@ -2718,7 +2718,7 @@ return {
             tag_meteor = {
                 name = "유성 태그",
                 text = {
-                    "무료 {C:attention}메가 천체 팩{}을",
+                    "무료 {C:planet}메가 천체 팩{}을",
                     "획득합니다",
                 },
             },
@@ -2755,7 +2755,7 @@ return {
             tag_skip = {
                 name = "속도 태그",
                 text = {
-                    "이번 런에서 건너뛴 블라인드마다",
+                    "이번 게임에서 건너뛴 블라인드마다",
                     "{C:money}$#1#{}를 획득합니다",
                     "{C:inactive}({C:money}$#2#{C:inactive} 획득 예정)",
                 },
@@ -2835,14 +2835,14 @@ return {
             c_fool = {
                 name = "바보",
                 text = {
-                    "이번 런 동안 사용한",
+                    "이번 게임 동안 사용한",
                     "마지막 {C:tarot}타로{} 또는",
                     "{C:planet}행성{} 카드를 생성합니다",
                     "{s:0.8,C:tarot}바보{s:0.8} 제외",
                 },
             },
             c_hanged_man = {
-                name = "매달린 남자",
+                name = "매달린 사람",
                 text = {
                     "선택한 카드",
                     "최대 {C:attention}#1#{}장을 파괴합니다",
@@ -3049,7 +3049,7 @@ return {
                 name = "환상",
                 text = {
                     "상점의 {C:attention}플레잉 카드{}에",
-                    "{C:enhanced}강화{}, {C:dark_edition}에디션{} 또는 {C:attention}인장{}이",
+                    "{C:enhanced}강화{}, {C:dark_edition}에디션{} 및/또는 {C:attention}인장{}이",
                     "있을 수 있습니다",
                 },
                 unlock = {
@@ -3066,13 +3066,13 @@ return {
                     "{C:attention}#1#%{} 할인됩니다",
                 },
                 unlock = {
-                    "한 번의 런에서",
+                    "한 번의 게임에서",
                     "최소 {C:attention}#1#{}장의",
                     "{C:voucher}바우처{} 카드 사용",
                 },
             },
             v_magic_trick = {
-                name = "마술",
+                name = "마술 묘기",
                 text = {
                     "{C:attention}상점{}에서",
                     "{C:attention}플레잉 카드{}를",
@@ -3128,7 +3128,7 @@ return {
                     "나타날 수 있습니다",
                 },
                 unlock = {
-                    "아무 {C:attention}아르카나 팩{}에서",
+                    "아무 {C:tarot}아르카나 팩{}에서",
                     "총 {C:attention}#1#{}장의",
                     "{C:tarot}타로{} 카드 사용",
                     "{C:inactive}(#2#)",
@@ -3311,24 +3311,24 @@ return {
             clairvoyance = "모든 유령 카드 발견",
             completionist = "컬렉션 100% 발견",
             completionist_plus = "황금색 판돈 난이도에서 모든 덱으로 승리",
-            completionist_plus_plus = "모든 조커에 골드 스티커 획득",
+            completionist_plus_plus = "모든 조커에 황금색 스티커 획득",
             extreme_couponer = "모든 바우처 발견",
             flushed = "와일드 카드 5장으로 플러시 플레이",
-            heads_up = "런 승리",
-            high_stakes = "황금색 판돈 난이도 이상에서 런 승리",
+            heads_up = "게임 승리",
+            high_stakes = "황금색 판돈 난이도 이상에서 게임 승리",
             legendary = "전설 조커 발견",
-            low_stakes = "붉은색 판돈 난이도 이상에서 런 승리",
-            mid_stakes = "파란색 판돈 난이도 이상으로 런 승리",
-            nest_egg = "한 번의 런에서 $400 이상 보유",
+            low_stakes = "붉은색 판돈 난이도 이상에서 게임 승리",
+            mid_stakes = "파란색 판돈 난이도 이상으로 게임 승리",
+            nest_egg = "한 번의 게임에서 $400 이상 보유",
             retrograde = "아무 족보나 레벨 10 달성",
             roi = "앤티 4까지 바우처 5개 구매",
             royale = "로열 플러시 플레이",
             rule_bender = "아무 도전이나 완료",
             rule_breaker = "모든 도전 완료",
             shattered = "한 번의 핸드에서 유리 카드 2장 파괴",
-            speedrunner = "12 라운드 이하로 런 승리",
+            speedrunner = "12 라운드 이하로 게임 승리",
             tiny_hands = "덱을 카드 20장 이하로 압축",
-            you_get_what_you_get = "상점을 새로고침하지 않고 런 승리",
+            you_get_what_you_get = "상점을 새로고침하지 않고 게임 승리",
         },
         achievement_names = {
             _100000k = "100,000,000",
@@ -3397,22 +3397,27 @@ return {
             Clubs = {
                 ["1"] = "기본",
                 ["2"] = "Vampire Survivors",
+                ["3"] = "Slay the Spire",
             },
             Diamonds = {
                 ["1"] = "기본",
                 ["2"] = "데이브 더 다이버",
+                ["3"] = "Stardew Valley",
             },
             Hearts = {
                 ["1"] = "기본",
                 ["2"] = "Among Us",
+                ["3"] = "The Binding of Isaac",
             },
             Spades = {
                 ["1"] = "기본",
                 ["2"] = "더 위쳐",
+                ["3"] = "Cyberpunk 2077",
             },
         },
         dictionary = {
             ['$'] = "$",
+            b_FAQ = "FAQ",
             b_and_use = "및 사용",
             b_back = "뒤로",
             b_blinds = "블라인드",
@@ -3438,13 +3443,14 @@ return {
             b_enhanced_cards = "강화된 카드",
             b_full_deck = "전체 덱",
             b_high_contrast_cards = "고대비 카드",
+            b_how_to_play = "게임 방법",
             b_imagery = "이미지",
             b_jokers = "조커",
             b_load_profile = "프로필 불러오기",
             b_main_menu = "메인 메뉴",
             b_music = "음악",
             b_new_challenge = "새로운 도전 시작",
-            b_new_run = "새로운 런",
+            b_new_run = "새로운 게임",
             b_next = "다음",
             b_next_round_1 = "다음",
             b_next_round_2 = "라운드",
@@ -3463,8 +3469,9 @@ return {
             b_reroll_boss = "보스 새로고침",
             b_reset_profile = "프로필 초기화",
             b_restrictions = "제한",
+            b_retry = "재시도",
             b_rules = "규칙",
-            b_run_info_1 = "런",
+            b_run_info_1 = "게임",
             b_run_info_2 = "정보",
             b_seals = "인장",
             b_seed = "시드",
@@ -3487,17 +3494,18 @@ return {
             b_set_rumble = "컨트롤러 진동",
             b_set_screenshake = "화면 흔들기",
             b_set_shadows = "그림자",
+            b_set_vibration = "진동",
             b_set_video = "비디오",
             b_set_windowmode = "창 모드",
             b_settings = "설정",
             b_skip = "건너뛰기",
             b_skip_blind = "블라인드 건너뛰기",
             b_skip_reward = "건너뛰기 보상",
-            b_sort_hand = "핸드 정렬",
+            b_sort_hand = "손패 정렬",
             b_sounds = "사운드",
             b_spectral_cards = "유령 카드",
             b_stake = "판돈",
-            b_start_new_run = "새로운 런",
+            b_start_new_run = "새로운 게임",
             b_stat_consumables = "소모품",
             b_stat_jokers = "조커",
             b_stat_planets = "행성",
@@ -3541,7 +3549,7 @@ return {
             k_compatible = "호환 가능",
             k_copied_ex = "복사됨!",
             k_custom_rules = "사용자 지정 규칙",
-            k_daily_run = "일일 런",
+            k_daily_run = "일일 게임",
             k_debuffed = "디버프됨",
             k_deck = "덱",
             k_deck_stake_wins = "승리한 덱별 난이도",
@@ -3570,7 +3578,7 @@ return {
             k_joker = "조커",
             k_joker_stickers = "조커 스티커",
             k_jokers_cap = "조커",
-            k_legendary = "레전더리",
+            k_legendary = "전설",
             k_level_prefix = "Lv.",
             k_level_up_ex = "레벨 업!",
             k_locked = "잠김",
@@ -3610,7 +3618,7 @@ return {
             k_reward = "보상",
             k_round = "라운드",
             k_safe_ex = "무사함!",
-            k_saved_ex = "생존!",
+            k_saved_ex = "생존함!",
             k_seed = "시드",
             k_seeded_run = "시드 설정",
             k_skipped_cap = "건너뜀",
@@ -3645,9 +3653,20 @@ return {
                 "꺼짐",
                 "켜짐",
             },
+            ml_buy_and_use_target = {
+                "구매",
+                "및 사용",
+            },
+            ml_buy_target = {
+                "구매",
+            },
             ml_card_stats = {
                 "카드",
                 "통계",
+            },
+            ml_controller_required = {
+                "플레이하려면 게임 컨트롤러가 필요합니다. ",
+                "계속하려면 컨트롤러를 연결하세요.",
             },
             ml_crash_report_info = {
                 "충돌 보고서는 개발자에게 전달되어",
@@ -3677,6 +3696,13 @@ return {
                 "플레이하면",
                 "손패로 돌아옵니다",
             },
+            ml_offline_message = {
+                "이 기기는 오프라인입니다.",
+                "현재 저장 항목은 오래되었을 수 있습니다.",
+            },
+            ml_open_target = {
+                "열기",
+            },
             ml_paste_seed = {
                 "시드",
                 "붙여넣기",
@@ -3684,6 +3710,12 @@ return {
             ml_play_discard_pos_opt = {
                 "버리기/플레이",
                 "플레이/버리기",
+            },
+            ml_redeem_target={
+                "사용",
+            },
+            ml_sell_target={
+                "판매",
             },
             ml_shadow_opt = {
                 "켜짐",
@@ -3727,13 +3759,13 @@ return {
             ph_defeat_this_blind_2 = "발견합니다",
             ph_demo_thanks_1 = "BALATRO 체험판을",
             ph_demo_thanks_2 = "플레이해 주셔서 감사합니다",
-            ph_display_stickers = "런 중 판돈 스티커 표시",
+            ph_display_stickers = "게임 중 판돈 스티커 표시",
             ph_game_over = "게임 오버",
-            ph_improve_run = "런을 업그레이드하세요!",
+            ph_improve_run = "게임을 업그레이드하세요!",
             ph_most_played = "(최다 플레이 족보)",
             ph_mr_bones = "해골 아저씨에 의해 생존",
             ph_no_boss_active = "활성화된 보스 없음",
-            ph_no_vouchers = "이번 런에서 사용한 바우처 없음",
+            ph_no_vouchers = "이번 게임에서 사용한 바우처 없음",
             ph_score_at_least = "최소 득점:",
             ph_score_cards_discarded = "버린 카드",
             ph_score_cards_played = "플레이한 카드",
@@ -3753,7 +3785,7 @@ return {
             ph_up_ante_1 = "앤티 상향",
             ph_up_ante_2 = "모든 블라인드 상향",
             ph_up_ante_3 = "블라인드 새로고침",
-            ph_vouchers_redeemed = "이번 런에서 사용한 바우처",
+            ph_vouchers_redeemed = "이번 게임에서 사용한 바우처",
             ph_you_win = "승리!",
             ph_you_win_demo = "체험판에서 승리했습니다!",
         },
@@ -3775,7 +3807,7 @@ return {
             foil = "포일",
             gold_seal = "황금색 인장",
             holographic = "홀로그래픽",
-            legendary = "레전더리",
+            legendary = "전설",
             locked = "잠김",
             negative = "네거티브",
             perishable = "소멸성",
@@ -4000,9 +4032,9 @@ return {
                 "곱한 만큼의 {C:blue}칩{}을 획득합니다",
             },
             fh_3 = {
-                "{C:attention}런 정보{} 영역에서",
+                "{C:attention}게임 정보{} 영역에서",
                 "{C:attention}족보{}와 함께",
-                "현재 런에 대한",
+                "현재 게임에 대한",
                 "다른 정보도 확인해 보세요",
             },
             fh_4 = {
@@ -4010,9 +4042,19 @@ return {
                 "{C:blue}칩{}을 획득할 수 있으니",
                 "하나씩 확인해 보세요!",
             },
+            fh_4_touch = {
+                "또한 카드를 통해",
+                "{C:blue}칩{}을 획득할 수 있으니",
+                "길게 눌러 확인해 보세요!",
+            },
             fh_5 = {
                 "이제 플레이할 카드",
                 "최대 {C:attention}5{}장을 선택한 후",
+                "{C:blue}'핸드 플레이'{}를 누르세요",
+            },
+            fh_5_touch = {
+                "이제 플레이할 카드",
+                "최대 {C:attention}5{}장을 탭한 후",
                 "{C:blue}'핸드 플레이'{}를 누르세요",
             },
             fh_6 = {
@@ -4024,7 +4066,7 @@ return {
             fh_7 = {
                 "조심하세요! 라운드별",
                 "{C:blue}핸드{} 및 {C:red}버리기{} 횟수는",
-                "한정되어 있습니다.",
+                "한정되어 있습니다",
             },
             fh_8 = {
                 "이 라운드에서 승리하려면",
@@ -4040,7 +4082,7 @@ return {
             },
             s_10 = {
                 "{C:attention}바우처{}는",
-                "{C:attention}보스 블라인드{}를 처치해야",
+                "{C:attention}보스 블라인드{}에 승리해야",
                 "다시 채워집니다.",
             },
             s_11 = {
@@ -4057,8 +4099,14 @@ return {
                 "이 잘생긴 악마를",
                 "구매해 보세요",
             },
+            s_2_touch = {
+                "이 잘생긴 악마를",
+                "구매해 보세요!",
+                "상점에서 {C:attention}'구매'{}",
+                "구역으로 드래그하세요",
+            },
             s_3 = {
-                "이것은 런에 추가할 수 있는",
+                "이것은 게임에 추가할 수 있는",
                 "{C:attention}#1#{}장의 {C:attention}조커{} 중 하나입니다.",
                 "모든 {C:attention}조커{}는",
                 "각기 다른 기능을 갖고 있습니다",
@@ -4090,7 +4138,7 @@ return {
             s_9 = {
                 "돈을 충분히 모으면,",
                 "{C:attention}바우처{}를 구매할 수 있습니다.",
-                "{C:attention}바우처{}는 런을 업그레이드하는",
+                "{C:attention}바우처{}는 게임을 업그레이드하는",
                 "지속 효과를 갖고 있습니다!",
             },
             sb_1 = {
@@ -4114,12 +4162,12 @@ return {
             },
             sh_1 = {
                 "카드를 더 얻으면",
-                "재배열할 수 있습니다",
+                "재배열할 수 있습니다.",
                 "{C:attention}조커{}는 왼쪽에서 오른쪽",
                 "순서대로 발동합니다",
             },
             sh_2 = {
-                "또한, 잊지 말고",
+                "또한 잊지 말고",
                 "소모품을 {C:attention}사용{}하세요!",
             },
             sh_3 = {
@@ -4127,6 +4175,12 @@ return {
                 "선택하고 해당 {C:tarot}타로{} 카드에서",
                 "{C:attention}'사용'{}을 눌러",
                 "강화하세요!",
+            },
+            sh_3_touch = {
+                "손패에서 최대 {C:attention}2{}장의 카드를",
+                "선택하고 해당 {C:tarot}타로{} 카드를",
+                "{C:attention}'사용'{} 구역으로",
+                "드래그해 강화하세요!",
             },
         },
         v_dictionary = {
