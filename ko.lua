@@ -3420,7 +3420,7 @@ return {
                 ["2"] = "더 위쳐",
                 ["3"] = "Cyberpunk 2077",
                 ["4"] = "Shovel Knight",
-                ["5"] = "Don’t Starve"
+                ["5"] = "Don't Starve"
             },
         },
         dictionary = {
