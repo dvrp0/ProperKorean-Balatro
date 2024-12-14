@@ -3398,21 +3398,29 @@ return {
                 ["1"] = "기본",
                 ["2"] = "Vampire Survivors",
                 ["3"] = "Slay the Spire",
+                ["4"] = "Potion Craft",
+                ["5"] = "Warframe"
             },
             Diamonds = {
                 ["1"] = "기본",
                 ["2"] = "데이브 더 다이버",
                 ["3"] = "Stardew Valley",
+                ["4"] = "Enter the Gungeon",
+                ["5"] = "1000xRESIST"
             },
             Hearts = {
                 ["1"] = "기본",
                 ["2"] = "Among Us",
                 ["3"] = "The Binding of Isaac",
+                ["4"] = "Cult of the Lamb",
+                ["5"] = "Divinity Original Sin 2"
             },
             Spades = {
                 ["1"] = "기본",
                 ["2"] = "더 위쳐",
                 ["3"] = "Cyberpunk 2077",
+                ["4"] = "Shovel Knight",
+                ["5"] = "Don’t Starve"
             },
         },
         dictionary = {
